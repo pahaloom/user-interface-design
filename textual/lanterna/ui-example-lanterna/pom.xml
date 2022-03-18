@@ -9,8 +9,15 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>ui-example-lanterna</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+
+  <parent>
+    <groupId>pahaloom.triporganizer</groupId>
+    <artifactId>triporganizer-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../../../pom.xml</relativePath>
+  </parent>
+
+  <url>https://github.com/pahaloom/user-interface-design</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,6 +30,12 @@
         <groupId>com.googlecode.lanterna</groupId>
         <artifactId>lanterna</artifactId>
         <version>3.1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>RELEASE</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 
